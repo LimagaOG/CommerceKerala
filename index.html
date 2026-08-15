@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLedger Studio | Higher Secondary Accounting</title>
+    <title>Riswan-Limaga Enterprises | Commerce Kerala</title>
     <!-- Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,51 +22,120 @@
         }
     </style>
 </head>
-<body class="bg-[#0b1329] text-slate-100 min-h-screen flex flex-col justify-between">
+<body class="bg-[#0b1329] text-slate-100 min-h-screen flex flex-col justify-between selection:bg-[#00FF66] selection:text-black">
 
     <!-- Header / Navbar -->
     <header class="max-w-6xl mx-auto w-full p-6 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <div class="bg-blue-600 neon-border-subtle p-2 rounded-xl text-[#00FF66] font-bold text-xl">EL</div>
-            <span class="text-xl font-bold tracking-tight">EduLedger Studio</span>
+        <div class="flex items-center space-x-3 cursor-pointer" onclick="showHome()">
+            <!-- KL COMMERCE Badge -->
+            <div class="bg-blue-600 neon-border-subtle px-2.5 py-1.5 rounded-xl text-[#00FF66] font-extrabold text-sm tracking-wider shadow-md">
+                KL
+            </div>
+            <span class="text-xl font-bold tracking-tight hover:text-[#00FF66] transition">Riswan-Limaga Enterprises</span>
         </div>
-        <a href="https://github.com/Riswan-Limaga/ForCommerceKeralaByRiswan-Limaga" target="_blank" class="text-sm bg-[#131f42] hover:bg-[#1a2b5c] px-4 py-2 rounded-lg neon-border-subtle text-slate-200 transition">
-            GitHub Source
-        </a>
-    </header>
-
-    <!-- Hero Section -->
-    <main class="max-w-4xl mx-auto px-6 py-12 text-center flex-grow flex flex-col justify-center items-center">
-        <!-- Red Accent Tag -->
-        <span class="bg-red-500/10 text-red-400 text-xs font-semibold px-3 py-1 rounded-full border border-red-500/30 mb-6 flex items-center space-x-1.5">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span>Designed for Kerala Higher Secondary Commerce</span>
-        </span>
-        
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Modern Accounting Studio for <span class="text-[#00FF66] neon-text-glow">Education</span>
-        </h1>
-        <p class="text-slate-300 text-lg md:text-xl max-w-2xl mb-10">
-            A secure, fully offline desktop application tailored for ledger management, journal entries, and financial statement calculations in school labs.
-        </p>
-
-        <!-- Direct Download Button with Neon Green Stroke & Red Accent -->
-        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <a href="https://github.com/Riswan-Limaga/ForCommerceKeralaByRiswan-Limaga/releases/download/v1.0.0/eduledger-studio.exe" 
-               class="bg-[#111c38] hover:bg-[#18264d] text-white font-semibold px-8 py-4 rounded-xl neon-border transition flex items-center justify-center space-x-3 text-lg group">
-                <svg class="w-6 h-6 text-[#00FF66] group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-                <span>Download for Windows <span class="text-red-400 font-bold">(.exe)</span></span>
+        <div class="flex items-center space-x-3">
+            <button onclick="showProjects()" class="text-sm bg-[#131f42] hover:bg-[#1a2b5c] px-4 py-2 rounded-lg neon-border-subtle text-[#00FF66] font-medium transition">
+                Projects
+            </button>
+            <a href="https://github.com/LimagaOG/CommerceKerala" target="_blank" class="text-sm bg-[#131f42] hover:bg-[#1a2b5c] px-4 py-2 rounded-lg neon-border-subtle text-slate-200 transition">
+                GitHub Source
             </a>
         </div>
-        <p class="text-xs text-slate-400 mt-4">Version 1.0.0 &bull; Free & Open Source &bull; No installation required</p>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow flex flex-col justify-center items-center w-full">
+
+        <!-- HOME VIEW -->
+        <div id="home-view" class="w-full text-center flex flex-col items-center">
+            <!-- Red Accent Tag -->
+            <span class="bg-red-500/10 text-red-400 text-xs font-semibold px-3 py-1 rounded-full border border-red-500/30 mb-6 flex items-center space-x-1.5">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <span>Designed for Kerala Higher Secondary Commerce</span>
+            </span>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Modern Accounting Studio for <span class="text-[#00FF66] neon-text-glow">Education</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mb-10">
+                A secure, fully offline desktop application tailored for ledger management, journal entries, and financial statement calculations in school labs.
+            </p>
+
+            <!-- See Our Projects Button -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                <button onclick="showProjects()" 
+                   class="bg-[#111c38] hover:bg-[#18264d] text-white font-semibold px-8 py-4 rounded-xl neon-border transition flex items-center justify-center space-x-3 text-lg group cursor-pointer">
+                    <span>See Our Projects</span>
+                    <span class="text-[#00FF66] group-hover:translate-x-1.5 transition-transform font-bold">&rarr;</span>
+                </button>
+            </div>
+            <p class="text-xs text-slate-400 mt-4">Free & Open Source &bull; Built for Kerala Teachers & Students</p>
+        </div>
+
+        <!-- PROJECTS VIEW (Hidden by default) -->
+        <div id="projects-view" class="w-full hidden flex flex-col items-center">
+            <div class="text-center mb-10">
+                <span class="bg-blue-500/10 text-[#00FF66] text-xs font-semibold px-3.5 py-1 rounded-full border border-[#00FF66]/30 uppercase tracking-wider">
+                    Official Releases
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mt-3 text-white">
+                    Projects
+                </h2>
+                <p class="text-slate-400 text-sm mt-2">Explore our specialized desktop tools built for higher secondary education.</p>
+            </div>
+
+            <!-- Project Card inside Neon Green Stroke Box -->
+            <div class="w-full max-w-2xl bg-[#111c38]/80 backdrop-blur-md p-6 sm:p-8 rounded-2xl neon-border flex flex-col justify-between shadow-xl">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white tracking-wide">EduLedger Studio</h3>
+                        <span class="bg-red-500/20 text-red-400 text-xs px-2.5 py-1 rounded-md border border-red-500/30 font-semibold">v1.0.0</span>
+                    </div>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                        A standalone, fully offline accounting studio tailored specifically for Kerala Higher Secondary commerce curriculum. Features robust ledger management, journal recording, and automated statement generation for school computer labs.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-blue-900/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <span class="text-xs text-slate-400">Platform: Windows (<span class="text-red-400 font-bold">.exe</span>) &bull; Portable</span>
+                    <a href="https://github.com/LimagaOG/CommerceKerala/releases/download/v1.0.0/eduledger-studio.exe" 
+                       class="w-full sm:w-auto bg-[#00FF66] hover:bg-[#00dd55] text-black font-bold px-6 py-3 rounded-xl shadow-lg shadow-[#00FF66]/20 transition flex items-center justify-center space-x-2 text-sm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        <span>Download for Windows (.exe)</span>
+                    </a>
+                </div>
+            </div>
+
+            <button onclick="showHome()" class="mt-8 text-sm text-slate-400 hover:text-[#00FF66] transition flex items-center space-x-1 cursor-pointer">
+                <span>&larr; Back to Home</span>
+            </button>
+        </div>
+
     </main>
 
     <!-- Footer -->
     <footer class="border-t border-blue-900/50 py-6 text-center text-xs text-slate-400 bg-[#090f21]">
-        <p>&copy; 2026 ForCommerceKerala by Riswan-Limaga. Built for teachers and students.</p>
+        <p>&copy; 2026 Riswan-Limaga Enterprises. Built for Kerala educators and students.</p>
     </footer>
 
+    <!-- Simple JavaScript for Tab Switching -->
+    <script>
+        const homeView = document.getElementById('home-view');
+        const projectsView = document.getElementById('projects-view');
+
+        function showProjects() {
+            homeView.classList.add('hidden');
+            projectsView.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showHome() {
+            projectsView.classList.add('hidden');
+            homeView.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
