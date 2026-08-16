@@ -4,22 +4,12 @@ A centralized repository featuring open-source desktop applications, accounting 
 
 ---
 
-## 🚀 Projects Included
-
-### 1. EduLedger Studio (`EduLedger-App`)
-* **Description:** A standalone, fully offline accounting studio tailored for higher secondary education curriculum. 
-* **Key Features:**
-  * Ledger management, journal entries, and financial statement calculations.
-  * Completely portable offline desktop application.
-  * Custom-built for commerce educators and school labs.
-* **Platforms Supported:** Windows (`.exe`)
-
 ---
 
 ## 📦 How to Download & Run
 
 1. Head over to the **[Releases](../../releases)** section of this repository.
-2. Download the latest stable version of **`eduledger-studio.exe`**.
+2. Download the latest stable version .
 3. Double-click the file to run it instantly—no complex installation or internet connection required!
 
 ---
